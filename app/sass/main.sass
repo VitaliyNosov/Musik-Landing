@@ -1,0 +1,1134 @@
+@import config
+
+// CUSTOM USER STYLES & IMPORTS
+
+
+.wrapper
+  overflow: hidden
+  background-color: #000
+  // flex-direction: column
+    
+
+// header section
+
+.header__block 
+  width: 100%
+  height: 100vh
+  background: url(../images/Duality3.jpg) no-repeat center center
+  background-size: 100% 100%
+  position: relative
+
+.black__mask
+  width: 100%
+  height: 100%
+  position: absolute
+  background-color: rgba(0, 0, 0, 0.6)  
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+
+.menu__wrapper 
+  width: 100%
+  padding-top: 20px
+  background-color: #000
+  z-index: 999999
+  position: fixed
+
+
+header
+  width: 100%
+  height: 88px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background-color: #000
+  border-bottom: 1px solid #272729
+  border-top: 1px solid #272729
+  z-index: 10
+
+// logo block
+
+.logo__block
+  width: 20%
+  height: 100%
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  color: red
+  font-size: 28px
+  z-index: 10
+  img 
+    width: 170px
+    height: 45px
+
+// menu
+
+.menu
+	width: 50%
+	display: flex
+	align-items: center
+	justify-content: center
+	
+nav
+  text-align: center
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+  a
+    text-decoration: none
+    display: block
+    color: #fff
+    font-size: 16px
+
+.topmenu 
+	li
+		border-bottom: 3px solid rgba(0,0,0,0.0)
+		display: inline-block
+    position: relative
+		&:hover
+			border-bottom: 3px solid red
+		a 
+			position: relative
+    	padding: 10px 15px
+      transition: 0.3s linear
+			&:hover 
+				color: red
+				
+.topmenu
+  > li
+    display: inline-block
+    position: relative
+    height: 88px
+    > a
+      position: relative
+      padding: 32px 10px     
+  li:hover a:before
+    transform: translate(-50%, 0)
+    opacity: 1
+    
+
+.submenu
+	visibility: hidden
+	width: 480px
+	height: 180px
+	background-color: #000
+	position: absolute
+	z-index: 4
+	left: 295%
+	top: 103%
+	overflow: hidden
+	font-size: 16px
+	display: flex
+	flex-wrap: wrap
+	transform: translate(-50%, 20px)
+	transition: 0.5s	
+	ul 
+		padding: 0px
+		margin: 0px
+	li 
+		list-style: none
+		border-bottom: 1px solid #383838
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		padding-left: 15px
+		&:hover 
+			border-bottom: 1px solid #383838
+	a 
+		color: #fff
+		text-decoration: none
+      	
+.topmenu > li:hover .submenu
+  visibility: visible
+  opacity: 1
+  transform: translate(-50%, 0)
+
+.colum__one 
+  border-bottom: 2px solid red
+  width: 50%
+  padding: 20px
+  ul 
+    margin-top: 20px
+
+.colum__two
+  border-bottom: 2px solid red
+  width: 50%
+  padding: 20px
+  ul 
+    margin-top: 20px
+
+// time block
+
+.time__block 
+  width: 15%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  h2 
+     font-size: 28px
+     font-family: "Digital"
+     color: #FF0000
+     z-index: 100
+
+// icon menu block
+
+.icon__cocial__block 
+  width: 15%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  z-index: 10
+  color: #fff
+  i 
+    margin-right: 25px
+    font-size: 20px
+    transition: transform .2s
+
+
+.fa-soundcloud 
+  &:hover 
+    color: #FF5500
+    cursor: pointer
+    transform: scale(1.5)
+
+.fa-twitter 
+  &:hover 
+    color: #1DA1F2
+    cursor: pointer
+    transform: scale(1.5)
+
+.fa-facebook-f 
+  &:hover 
+    color: #0269E3
+    cursor: pointer
+    transform: scale(1.5)
+
+.fa-youtube
+  &:hover 
+    color:  #FF0000 
+    cursor: pointer
+    transform: scale(1.5)
+
+// burger icon block
+  
+.burger__menu__icon__block 
+  width: 15%
+  height: 100%
+  margin-right: 20px
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 10
+
+.burger 
+  width: 30px
+  height: 30px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  display: none
+  
+.line 
+  width: 100%
+  height: 2px
+  background-color: #fff
+
+// mobile menu
+
+.mobile__menu
+  width: 100%
+  background-color: #000
+  margin-top: 0px
+  padding: 30px
+  display: none
+  ul 
+    margin: 0px
+    padding: 0px
+    li 
+      list-style-type: none
+      width: 100%
+      a 
+        text-decoration: none
+        color: #fff
+
+.li__main
+  border-bottom: 1px solid #383838
+  &:before
+    content: '•'
+    width: 5px
+    height: 5px
+    position: relative
+    padding: 0px
+    right: 5px
+    top: 13px
+    font-size: 65px
+    color: red
+  &:hover 
+    border-bottom: 1px solid red
+     
+.main__menu
+  font-size: 30px
+  &:hover 
+    color: red
+   
+.body__podmenu
+  display: none
+  li 
+    margin-left: 30px
+    margin-top: 5px
+
+.podmenu
+  font-size: 20px
+
+// player button
+
+.button-close 
+  position: absolute 
+  margin-top: 15px
+  margin-left: 400px
+  color: #fff 
+  &:hover 
+    color: red
+    cursor: pointer
+
+
+.player-button 
+  width: 70px
+  height: 70px
+  background-color: rgba(255, 0, 0, 0.5)
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  left: 85%
+  bottom: 20%
+  z-index: 1
+  transition: transform .2s
+  &:hover 
+    transform: scale(1.1)
+    cursor: pointer
+
+.button-body 
+  width: 45px
+  height: 45px
+  background-color: #FF0000
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  i 
+    font-size: 16px
+    animation: player 2s infinite alternate
+
+@keyframes player
+  0%
+    color: rgba(255, 255, 255, 1)
+  100%
+	  color:  rgba(255, 255, 255, 0.6)
+    
+    
+
+
+// header info block
+
+.header__info
+  width: 50%
+  height: 100%
+  color: #fff  
+  margin-top: 180px
+  h1
+    color: #fff
+    font-size: 85px
+    margin: 0px
+  span
+    font-size: 65px
+    color: rgba(255, 0, 0, 1)
+    z-index: 1000
+    
+    
+
+
+// .header__button 
+//   width: 50%
+//   height: 100px
+//   display: flex
+//   justify-content: flex-start 
+//   align-items: center
+//   a 
+//     width: 220px
+//     height: 50px
+//     border-radius: 50px
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     text-decoration: none 
+//     color: #fff
+//     background-color: red
+//     transition: 0.3s linear
+//     &:hover 
+//       background-color: #fff
+//       color: #000
+//       cursor: pointer
+
+
+.section__button
+  display: block
+  width: 320px
+  height: 60px
+  background-color: rgba(255, 0, 0, 1)
+  box-shadow: 0px 8px 43px rgba(255, 0, 0, 0.59)
+  border-radius: 30px
+  border: none
+  color: #ffffff
+  font-size: 12px
+  line-height: 50px
+  font-weight: 800
+  font-family: "Acrom", Arial, sans-serif
+  text-transform: uppercase
+  letter-spacing: 1.2px
+  cursor: pointer
+
+.section__button_first-step
+  margin-bottom: 22px
+  box-shadow: 0px 8px 30px rgba(255, 0, 0, 0.59)
+
+.sub-text_first-step
+  display: block
+  width: max-content
+  margin: 0 auto
+
+.section__button
+  transition: all 1s ease-in-out
+  position: relative
+  overflow: hidden
+
+  &:before
+    content: ''
+    background-color: rgba(255, 255, 255, 0.5)
+    height: 100%
+    width: 40px
+    display: block
+    position: absolute
+    top: 0
+    left: -60px
+    transform: skewX(-45deg) translateX(0)
+    transition: none
+
+  &:hover
+    background-color: rgba(255, 0, 0, 1)
+    color: #fff
+
+    &:before
+      transform: skewX(-45deg) translateX(460px)
+      transition: all 1s ease-in-out
+
+.header__logo
+  position: absolute 
+  top: 17%
+  left: 34.5%
+  color: #fff 
+  font-size: 40px
+  z-index: 1
+  img 
+    width: 400px
+    height: 280px
+
+
+
+
+// header info block
+
+
+.mesenger__block 
+  
+
+.masenger__body 
+
+.mesenger__button 
+  width: 120px
+  height: 30px
+  background-color: rgba(255, 0, 0, 1)
+  color: #fff 
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  left: -3.2%
+  top: 50%
+  position: fixed
+  transform: rotate(90deg)
+  transition: .5s 
+  z-index: 999999
+  &:hover 
+    background-color: #A90101
+    cursor: pointer
+  i 
+    margin-right: 5px
+
+.mesenger__icons 
+  // display: none
+
+
+.telegram 
+  width: 35px
+  height: 35px
+  font-size: 22px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  left: 0.5%
+  top: 35% 
+  background-color: #35ADE1 
+  position: fixed
+  transition: transform .2s
+  &:hover 
+    transform: scale(1.2)
+    cursor: pointer
+  a 
+    color: #fff
+
+.faceboock__mesenger 
+  width: 35px
+  height: 35px
+  font-size: 22px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute 
+  left: 0.5%
+  top: 65%
+  background-color: #1877F2
+  position: fixed
+  transition: transform .2s
+  &:hover 
+    transform: scale(1.2)
+    cursor: pointer
+  a 
+    color: #fff
+
+
+
+
+// info location block
+
+.info__block 
+  width: 100%
+  height: 108px
+  background-color: #000 
+  position: absolute
+  bottom: 0
+  
+
+.wawe
+  width: 1200px
+  height: 100%
+  padding: 20px 0px 20px 0px
+  margin: 0 auto
+  color: #fff
+  display: flex
+  border-bottom: 1px solid #272729
+  align-items: center
+  position: relative
+  img 
+    width: 100%
+    height: 100%
+    animation: wawe 3.5s infinite alternate    
+
+@keyframes wawe
+  0%
+    opacity: 0.9
+    
+  100%
+    opacity: 0.2
+
+.wawe__slider 
+  width: 1200px
+  height: 100%
+  position: absolute
+  background-color: #000 
+  border-left: 2px solid rgba(255, 0, 0, 1)
+  animation: wawe-slider 90s infinite 
+
+@keyframes wawe-slider 
+  0%
+    transform: translateX(0%)
+  100%
+    transform: translateX(100%)
+    
+
+.block__info 
+  width: 25%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  border-left: 1px solid rgb(99, 99, 103)
+  i 
+    font-size: 18px 
+    margin-right: 20px
+
+.block__border 
+  border-right: 1px solid rgb(99, 99, 103)
+
+// inform block
+
+.inform__block
+  width: 100%
+  height: 100vh
+  background-color: #000 
+
+.inform__block__header 
+  width: 100%
+  height: 150px
+  display: flex
+  justify-content: center
+  align-items: center
+  color: #fff 
+  font-size: 22px
+
+.inform__body 
+  width: 100%
+  margin-top: 50px
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.inform__photo__block 
+  width: 30% 
+  height: 200px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-bottom: 50px
+  overflow: hidden
+  img 
+    width: 100%
+    height: 100%
+
+// info block
+
+.info__block__section 
+  width: 100%
+  height: 100%
+  background-color: #000 
+  color: #fff
+
+.info__block__header 
+  width: 100%
+  height: 88px
+  display: flex
+  justify-content: center
+  align-items: center
+  color: #fff
+  font-size: 22px
+
+.info__block__text 
+  margin-top: 20px
+  text-align: center
+
+.info__block__carts 
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 0px 0px 80px 0px
+
+
+.cart 
+  width: 30%
+  margin-top: 50px
+  display: flex
+  justify-content: center
+  flex-direction: column
+  border: 1px solid #222222
+  padding: 20px
+  transition: 0.5s
+  &:hover 
+    background-color: #222222
+    cursor: pointer
+
+.cart__icon
+  width: 80px
+  height: 80px
+  background-color: #ccc
+  color: #000
+  margin: 0 auto
+  display: flex 
+  justify-content: center
+  align-items: center 
+  font-size: 35px 
+  border-radius: 50px
+ 
+.cart__header 
+  width: 100%
+  text-align: center
+
+.cart__text 
+  width: 100%
+  text-align: center
+  font-size: 12px
+
+
+
+// info block
+
+
+// equipment section
+
+
+.equipment__section 
+  width: 100%
+  height: 100vh
+  
+.equipment__header
+  width: 100%
+  height: 88px
+  display: flex
+  justify-content: center
+  align-items: center
+  color: #fff
+  font-size: 22px
+
+.equipment__bg
+  width: 100%
+  height: 100%
+  background: url(../images/background_2.png) no-repeat center center
+  background-size: 100% 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.equipment__info 
+  width: 100%
+  height: 55%
+  background-color: rgba(0, 0, 0, 0.8)
+
+.equipment__body
+  width: 100%
+  display: flex
+  align-items: center
+
+.equipment__block 
+  width: 20%
+  margin-top: 5%
+  color: #ffffff
+  display: flex
+  justify-content: center
+  align-items: center
+
+// packages section
+
+.packages__section 
+  width: 100%
+  height: 100%
+  padding: 120px 0px 120px 0px
+  background: #000
+  background: url(../images/recording-studio-bg.png) no-repeat center center
+  background-size: 100% 100%
+
+.packages__body 
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+.packages__head
+  width: 100%
+  height: 140px
+  background-color: #000 
+  color: #fff 
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 22px
+
+.packages 
+  width: 22%
+  border-radius: 10px
+  border: 2px solid #fff
+  padding: 20px
+
+.packages__price 
+  width: 100%
+  height: 80px
+  color: #fff 
+  font-size: 35px
+  display: flex
+  justify-content: center
+  align-items: center
+  span 
+    font-size: 45px
+    margin-right: 5px
+
+.packages__header 
+  width: 100%
+  height: 80px
+  color: #fff 
+  font-size: 24px 
+  display: flex
+  justify-content: center
+  align-items: center
+
+.packages__text 
+  width: 100%
+  font-size: 14px
+  color: #fff
+  text-align: center
+
+.packages__button 
+  width: 100%
+  display: flex
+  justify-content: center
+  a 
+    text-decoration: none
+    width: 140px
+    height: 40px
+    color: #fff 
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 10px
+
+.button__green 
+  background-color: #12CD3E
+
+.button__blue 
+  background-color: #0055AA 
+
+.button__red 
+  background-color: #FF0000
+
+.color__green
+  color: #12CD3E
+
+.color__blue
+  color: #0055AA
+
+.color__red
+  color: #FF0000
+
+.packages__green
+  animation: color-green 3s infinite alternate
+
+.packages__blue
+  animation: color-blue 3s infinite alternate
+
+.packages__red
+  animation: color-red 3s infinite alternate
+
+
+@keyframes color-green
+  0%
+    box-shadow: 1px 1px 12px 1px rgba(18,205,62,1)
+  100%
+    box-shadow: 1px 1px 42px 1px rgba(18,205,62,1)
+
+@keyframes color-blue
+  0%
+    box-shadow: 1px 1px 12px 1px rgba(0,85,170,1)
+  100%
+    box-shadow: 1px 1px 42px 1px rgba(0,85,170,1)
+
+@keyframes color-red
+  0%
+    box-shadow: 1px 1px 12px 1px rgba(255,0,0,1)
+  100%
+    box-shadow: 1px 1px 42px 1px rgba(255,0,0,1)
+    
+// portfolio section
+
+.portfolio__section 
+  width: 100%
+  height: 100vh
+  position: relative
+  z-index: 1 
+  
+
+.portfolio__masck 
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.8) 
+  position: absolute 
+  top: 0 
+  left: 0 
+
+.porfolio__header 
+  width: 100%
+  height: 80px
+  margin-top: 40px
+  display: flex
+  justify-content: center
+  align-items: center 
+  h2
+    color: #fff
+    font-size: 40px
+
+.portfolio
+  width: 100%
+  height: auto
+  margin-top: 20px
+  padding: 30px 0px 30px 0px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.albom 
+  width: 420px
+  height: 420px
+  margin: 0 auto
+  box-shadow:  1px 1px 32px 1px rgba(0, 0, 0, 0.9)
+  img 
+    width: 420px
+    height: 420px
+
+
+// fag section
+
+.fag__section 
+  width: 100%
+  height: 100%
+  background-color: #000 
+  color: #fff
+
+.fag__header 
+  width: 100%
+  height: 150px
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 22px
+
+.wrapper__accardion
+  width: 100%
+  margin-bottom: 80px
+
+.block 
+	width: 100%
+
+.block__item
+  margin: 0px 0px 20px 0px
+  border: 1px solid #ccc
+  color: #fff
+
+.block__title
+  height: 50px
+  display: flex
+  align-items: center
+  letter-spacing: 2px
+  position: relative
+  padding: 0px 0px 0px 50px
+  color: #fff
+  cursor: pointer
+
+  &:before, &:after
+    content: ''
+    width: 10px
+    height: 1px
+    background-color: #fff
+    position: absolute
+    top: 23px
+    margin-left: 15px
+    transition: all 0.3s ease 0s
+
+  &:before
+    transform: rotate(40deg)
+    left: 0px
+
+  &:after
+    transform: rotate(-40deg)
+    left: 8px
+
+  &.active
+    &:before, &:after
+      background-color: #fff
+      
+    &:before
+      transform: rotate(-40deg)
+
+    &:after
+      transform: rotate(40deg)
+
+.block__text
+  display: none
+  padding: 20px 20px 20px 50px
+
+
+// reviews block 
+
+.reviews__body
+  width: 100%
+  margin: 80px 0px 80px 0px
+
+.review 
+  width: 100%
+  height: 100%
+  padding-top: 40px
+
+.review__face
+  width: 100px
+  height: 100px
+  border-radius: 50px
+  margin: 0 auto
+  overflow: hidden
+  img 
+    width: 100%
+    height: 100% 
+
+.review__text 
+  font-size: 14px
+  text-align: center
+  color: #fff 
+  margin-top: 40px
+
+/* Лента слайдов */
+
+.slick-track
+  display: flex
+
+// Точки слайдера
+
+.slick-dots 
+  width: 100%
+  height: 60px
+  padding-left: 0px
+  margin-top: 78px
+  display: flex
+  justify-content: center
+  align-items: center
+  li 
+    color: #000
+    width: 11px
+    height: 11px
+    background-color: #fff
+    border-radius: 50%
+    margin-left: 5px
+    margin: 5px
+    &:hover 
+      cursor: pointer
+    button
+      visibility: hidden
+
+  .slick-active
+    background-color: #FF0000
+  
+// contact section
+
+.contact__section 
+  width: 100%
+  height: 100vh
+  background: url(../images/background_contact.jpg) no-repeat center center
+  background-size: 100% 100% 
+  display: flex
+  align-items: center
+
+
+.contact__body 
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.6)
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+.form-row 
+  width: 400px
+  border-bottom: 1px solid rgb(99, 99, 103)
+  margin-bottom: 30px
+  input 
+    background: none
+    border: none
+    color: red
+    padding: 0px 20px 0px 20px
+
+.button__content 
+  width: 400px
+  display: flex
+  justify-content: center
+  button 
+    width: 200px
+    height: 40px
+    border: none
+    border-radius: 50px
+    background-color: red
+    color: #fff
+    &:hover 
+      cursor: pointer
+      background-color: #fff
+      color: #000
+
+// footer block
+
+
+.footer__block 
+  width: 100%
+  margin: 50px 0px 50px 0px
+
+.footer__logo 
+  width: 100%
+  height: 80px
+  display: flex
+  justify-content: center
+  align-items: center
+  img 
+    width: 270px
+    height: 65px
+
+.footer__header 
+  width: 100%
+  height: 60px
+  display: flex
+  justify-content: center
+  align-items: center
+  color:  #ccc
+
+.footer__icons__block 
+  width: 100%
+  height: 40px
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #060606
+  i 
+    font-size: 28px
+    color: #fff 
+    margin-left: 30px
+
+
+
+
+// media style
+
+
+@media (max-width: 1200px) 
+  .container 
+    max-width: 970px
+  nav 
+    a 
+      font-size: 14px
+
+@media (max-width: 992px) 
+  .container 
+    max-width: 750px
+  .menu 
+    display: none
+  .burger 
+    display: flex
+  .mobile__menu
+    display: none
+ 
+@media (max-width: 767px) 
+  .container 
+    max-width: none
+  .mobile__menu
+    display: none
+
+

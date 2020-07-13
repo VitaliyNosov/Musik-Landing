@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>html__starter</title>
+	<meta name="description" content="html starter">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="images/favicon/favicon.ico">
+	<link rel="stylesheet" href="css/app.min.css">
+	<link rel="stylesheet" href="libs/overlayScrollbars.js/OverlayScrollbars.css">
+	<link rel="stylesheet" href="css/musik.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+
+</head>
+
+<body>
+
+	<!-- CUSTOM HTML -->
+
+
+
+
+
+	<div class="wrapper">
+
+
+		<!-- header -->
+
+		<div class="header__block">
+
+			<div class="black__mask">
+
+
+				<!-- player block -->
+
+				<div id="player" class="player">
+
+					<!-- button player -->
+
+					<div id="button-close" class="button-close">
+						<i class="far fa-times-circle"></i>
+					</div>
+
+					<!-- button player -->
+
+					<span id="arm"></span>
+					<ul>
+						<li class="artwork">
+						</li>
+						<li class="info">
+							<h1 id="artist">loading</h1>
+							<h4 id="album">loading</h4>
+							<h2 id="song">loading</h2>
+							<div class="button-items">
+								<audio id="music" preload="auto">
+								</audio>
+								<div id="slider">
+									<div id="elapsed"></div>
+									<div id="buffered"></div>
+								</div>
+								<p id="timer">0:00</p>
+								<div class="controls">
+									<span class="expend">
+										<svg id="previous" class="step-backward" viewBox="0 0 25 25" xml:space="preserve">
+											<g>
+												<polygon points="4.9,4.3 9,4.3 9,11.6 21.4,4.3 21.4,20.7 9,13.4 9,20.7 4.9,20.7"/>
+											</g>
+										</svg>
+									</span>
+									<svg id="play" viewBox="0 0 25 25" xml:space="preserve">
+										<defs>
+											<rect x="-49.5" y="-132.9" width="446.4" height="366.4"/>
+										</defs>
+										<g>
+											<circle fill="none" cx="12.5" cy="12.5" r="10.8"/>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M8.7,6.9V18c0,0,0.2,1.4,1.8,0l8.1-4.8c0,0,1.2-1.1-1-2L9.8,6.5 C9.8,6.5,9.1,6,8.7,6.9z"/>
+										</g>
+									</svg>
+									<svg id="pause" viewBox="0 0 25 25" xml:space="preserve">
+										<g>
+											<rect x="6" y="4.6" width="3.8" height="15.7"/>
+											<rect x="14" y="4.6" width="3.9" height="15.7"/>
+										</g>
+									</svg>
+									<span class="expend">
+										<svg id="next" class="step-foreward" viewBox="0 0 25 25" xml:space="preserve">
+											<g>
+												<polygon points="20.7,4.3 16.6,4.3 16.6,11.6 4.3,4.3 4.3,20.7 16.7,13.4 16.6,20.7 20.7,20.7"/>
+											</g>
+										</svg>
+									</span>
+									<div class="slider">
+										<div class="volume"></div>
+										<input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+
+
+				<div id="player-button" class="player-button">
+						<div class="button-body">
+							<i class="fas fa-play"></i>	
+					</div>
+				</div>
+
+				<!-- player block -->
+
+				<div class="info__block">
+					<div class="wawe">
+						<img src="images/wave-original.png" alt="#">
+						<div class="wawe__slider"></div>
+					</div>
+					
+				</div>
+
+				<!-- header info block  -->
+
+			
+
+			<div class="container">
+				<div class="header__info">
+					<span class="hero-typed-text"></span>
+					<h1>Рок Музыки</h1>
+				</div>
+
+				<button class="header__button section__button">Подробнее</button>
+		
+			</div>
+
+			<!-- header info block  -->
+
+			<!-- mesenger block -->
+
+			<div class="mesenger__block">
+				<div class="masenger__body">
+					<div id="mesenger__button" class="mesenger__button">
+						<i class="fas fa-envelope"></i>
+						Написать</div>
+					<div id="mesenger__icons" class="mesenger__icons">
+						<div class="telegram">
+							<a target="_blank" href="https://t.me/joinchat/AAAAAFHkNyjzA6ZGOU8W8g">
+								<i class="fab fa-telegram-plane"></i>
+							</a>
+						</div>
+						<div class="faceboock__mesenger">
+							<a target="_blank" href="https://www.facebook.com/messages/t">
+								<i class="fab fa-facebook-messenger"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- mesenger block -->
+
+		</div>
+
+			<!-- menu -->
+
+			<div class="menu__wrapper" id="navbar">
+
+			<div class="container">
+
+				<header>
+			
+				<!-- logo -->
+			
+					<div class="logo__block">
+						<img src="images/Logo.png" alt="#">
+					</div>
+			
+				<!-- menu -->
+			
+					<div class="menu">
+						<nav>
+							<ul class="topmenu">
+								<li><a href="#">Главная</a>
+									<div class="submenu">
+										<div class="colum__one">
+											<ul>
+												<li><a href="#">Оборудование</a></li>
+												<li><a href="#">Вопросы ?</a></li>
+												<li><a href="#">Отзывы</a></li>
+											</ul>
+										</div>
+										<div class="colum__two">
+											<ul>
+												<li><a href="#">Последние работы</a></li>
+												<li><a href="#">Написать нам</a></li>
+												<li><a href="#">Режим работы</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li><a href="#" class="down">О нас</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Партнеры</a></li>
+								<li><a href="#">Работы</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+
+			
+				<!-- button -->
+			
+					<div class="burger__menu__icon__block">
+						<div class="burger menu__icon">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+					</div>
+
+					<div class="time__block">
+						<h2 id="cl"></h2>
+					</div>
+
+					<!-- icon cocial block -->
+
+					<div class="icon__cocial__block">
+						<i class="fab fa-soundcloud"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-youtube"></i>
+					</div>
+
+			
+				</header>
+			
+			<!-- mobile__podmenu -->
+			
+				<div class="mobile__menu menu__content">
+					<ul>
+						<li class="li__main"><a class="main__menu" href="#">Log in</a></li>
+						<li class="li__main menu__dpopdown"><a class="main__menu" href="#">Home</a></li>
+						<ul class="body__podmenu">
+							<li><a class="podmenu" href="#">Lola jola data</a></li>
+							<li><a class="podmenu" href="#">Maka kaka saka</a></li>
+							<li><a class="podmenu" href="#">Popa nugna mit</a></li>
+			
+							<li><a class="podmenu" href="#">Experteur sint</a></li>
+							<li><a class="podmenu" href="#">Cacabubu</a></li>
+					</ul>
+						<li class="li__main"><a class="main__menu" href="#">Blog</a></li>
+						<li class="li__main"><a class="main__menu" href="#">Contact</a></li>
+						<li class="li__main" ><a class="main__menu" href="#">Faq</a></li>	
+					</ul>
+				</div>
+			
+				</div>
+
+
+			</div>	
+
+	
+				
+
+			<!-- menu -->
+
+		
+			
+
+		</div>
+
+		<!-- header -->
+
+		
+
+		<!-- info block section -->
+
+		<div class="info__block__section">
+			<div class="container">
+				<div class="info__block__header">
+					О нас:
+				</div>
+				<div class="info__block__text">
+					<h2>Мы команда профессионалов которая занимаеться реампингом, сведением, мастерингом рок музыки.</h2>
+				</div>
+				<div class="info__block__carts">
+
+					<div class="cart">
+						<div class="cart__icon">
+							<i class="fas fa-music"></i>
+						</div>
+						<div class="cart__header">
+							<h3>У вас есть записаный материал?</h3>
+						</div>
+						<div class="cart__text">
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Reiciendis officia labore quasi laboriosam ab debitis. Itaque, quo nemo. 
+								Reprehenderit cupiditate ex sed, quas placeat omnis dolor autem earum hic inventore!</P>
+						</div>
+					</div>
+
+					<div class="cart">
+						<div class="cart__icon">
+							<i class="fas fa-headphones"></i>
+						</div>
+						<div class="cart__header">
+							<h3>У вас есть записаный материал?</h3>
+						</div>
+						<div class="cart__text">
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Reiciendis officia labore quasi laboriosam ab debitis. Itaque, quo nemo. 
+								Reprehenderit cupiditate ex sed, quas placeat omnis dolor autem earum hic inventore!</P>
+						</div>
+					</div>
+
+					<div class="cart">
+						<div class="cart__icon">
+							<i class="fas fa-file-audio"></i>
+						</div>
+						<div class="cart__header">
+							<h3>У вас есть записаный материал?</h3>
+						</div>
+						<div class="cart__text">
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Reiciendis officia labore quasi laboriosam ab debitis. Itaque, quo nemo. 
+								Reprehenderit cupiditate ex sed, quas placeat omnis dolor autem earum hic inventore!</P>
+						</div>
+					</div>
+
+					<div class="cart">
+						<div class="cart__icon">
+							<i class="fas fa-play"></i>
+						</div>
+						<div class="cart__header">
+							<h3>У вас есть записаный материал?</h3>
+						</div>
+						<div class="cart__text">
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Reiciendis officia labore quasi laboriosam ab debitis. Itaque, quo nemo. 
+								Reprehenderit cupiditate ex sed, quas placeat omnis dolor autem earum hic inventore!</P>
+						</div>
+					</div>
+
+					<div class="cart">
+						<div class="cart__icon">
+							<i class="fas fa-guitar"></i>
+						</div>
+						<div class="cart__header">
+							<h3>У вас есть записаный материал?</h3>
+						</div>
+						<div class="cart__text">
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Reiciendis officia labore quasi laboriosam ab debitis. Itaque, quo nemo. 
+								Reprehenderit cupiditate ex sed, quas placeat omnis dolor autem earum hic inventore!</P>
+						</div>
+					</div>
+
+					<div class="cart">
+						<div class="cart__icon">
+							<i class="fas fa-volume-up"></i>
+						</div>
+						<div class="cart__header">
+							<h3>У вас есть записаный материал?</h3>
+						</div>
+						<div class="cart__text">
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Reiciendis officia labore quasi laboriosam ab debitis. Itaque, quo nemo. 
+								Reprehenderit cupiditate ex sed, quas placeat omnis dolor autem earum hic inventore!</P>
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+
+		</div>
+
+		<!-- info block section -->
+
+		<!-- inform block -->
+
+			<div class="inform__block">
+				<div class="inform__block__header">
+					Foto block info
+				</div>
+				<div class="container">
+					<div class="inform__body">
+						<div class="inform__photo__block">
+							<img src="images/foto/1.jpg" alt="#">
+						</div>
+						<div class="inform__photo__block">
+							<img src="images/foto/2.jpg" alt="#">
+						</div>
+						<div class="inform__photo__block">
+							<img src="images/foto/3.jpg" alt="#">
+						</div>
+						<div class="inform__photo__block">
+							<img src="images/foto/4.jpg" alt="#">
+						</div>
+						<div class="inform__photo__block">
+							<img src="images/foto/5.jpg" alt="#">
+						</div>
+						<div class="inform__photo__block">
+							<img src="images/foto/6.jpg" alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- inform block -->
+
+
+		<!-- equipment section -->
+
+			<div class="equipment__section">
+				<div class="equipment__header">
+					Equipment: 
+				</div>
+				<div class="equipment__bg">
+					<div class="equipment__info">
+						<div class="container">
+
+							<div class="equipment__body">
+
+							<div class="equipment__block">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam porro dolore labore harum laborum. Distinctio fugit beatae veritatis ad consectetur, accusamus, excepturi debitis culpa porro sint eveniet, laboriosam laudantium ea.
+							</div>
+							<div class="equipment__block">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci minus blanditiis, perferendis quos quidem nesciunt ut similique voluptatem esse, facere magni, distinctio unde ratione ducimus saepe est illum consectetur voluptas.
+							</div>
+							<div class="equipment__block">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsa facere consequatur sequi illo incidunt commodi optio quam. Iste repellendus doloribus fugiat ipsa alias itaque quisquam fuga nemo dicta earum?
+							</div>
+							<div class="equipment__block">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laboriosam laborum culpa minima rerum fugit laudantium eius tempore voluptatem non! Voluptates, a optio! Aliquam possimus alias ratione iusto sapiente? Distinctio.
+							</div>
+							<div class="equipment__block">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure porro et nemo dignissimos officia, quae esse! Neque magnam voluptas maiores quia porro quibusdam unde illo ad consequuntur. Suscipit, impedit quisquam!
+							</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+		<!-- equipment section -->
+
+		<!-- packages section -->
+
+		<div class="packages__head">
+			Price:
+		</div>
+
+		<div class="packages__section">
+			<div class="container">
+				<div class="packages__body">
+					<div class="packages packages__green">
+						<div class="packages__price"><span>80</span>$</div>
+						<div class="packages__header color__green">Сведение</div>
+						<div class="packages__text">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+							
+							<p>Enim beatae, molestiae pariatur, repellendus dolor fugit iure sint quia maxime reiciendis quo itaque!</p>
+						</div>
+						<div class="packages__button">
+							<a class="button__green" href="#">Start</a>
+						</div>
+					</div>
+
+					<div class="packages packages__blue">
+						<div class="packages__price"><span>30</span>$</div>
+						<div class="packages__header color__blue">Мастеринг</div>
+						<div class="packages__text">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+							
+							<p>Enim beatae, molestiae pariatur, repellendus dolor fugit iure sint quia maxime reiciendis quo itaque!</p>
+						</div>
+						<div class="packages__button">
+							<a class="button__blue" href="#">Start</a>
+						</div>
+					</div>
+
+					<div class="packages packages__red">
+						<div class="packages__price"><span>110</span>$</div>
+						<div class="packages__header color__red">Сведение <br> Мастеринг</div>
+						<div class="packages__text">
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+							
+							<p>Enim beatae, molestiae pariatur, repellendus dolor fugit iure sint quia maxime reiciendis quo itaque!</p>
+						</div>
+						<div class="packages__button">
+							<a class="button__red" href="#">Start</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- packages section -->
+
+		<!-- F.a.g section -->
+
+		<div class="fag__section">
+			<div class="container">
+				<div class="fag__header">
+					F.a.g:
+				</div>
+				<div class="fag__body">
+					<div class="wrapper__accardion">
+						<div class="block one">
+						
+							<div class="block__item title">
+								<div class="block__title title">Заголовок 1:</div>
+								<div class="block__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								</div>
+							</div>
+						
+							<div class="block__item">
+								<div class="block__title">Заголовок 2:</div>
+								<div class="block__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									Praesentium natus possimus ex, veniam eveniet inventore, 
+									illo numquam quibusdam dolorum error molestias quod animi laudantium dolore ea. 
+								</div>
+							</div>
+						
+							<div class="block__item">
+								<div class="block__title">Заголовок 3:</div>
+								<div class="block__text">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+									Natus laudantium, impedit culpa, corrupti excepturi exercitationem inventore 
+									atque dolor repellat fugiat enim aliquam. Numquam officia tenetur omnis 
+									possimus inventore distinctio minima.
+								</div>
+							</div>
+
+							<div class="block__item">
+								<div class="block__title">Заголовок 3:</div>
+								<div class="block__text">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+									Natus laudantium, impedit culpa, corrupti excepturi exercitationem inventore 
+									atque dolor repellat fugiat enim aliquam. Numquam officia tenetur omnis 
+									possimus inventore distinctio minima.
+								</div>
+							</div>
+
+							<div class="block__item">
+								<div class="block__title">Заголовок 3:</div>
+								<div class="block__text">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+									Natus laudantium, impedit culpa, corrupti excepturi exercitationem inventore 
+									atque dolor repellat fugiat enim aliquam. Numquam officia tenetur omnis 
+									possimus inventore distinctio minima.
+								</div>
+							</div>
+
+							<div class="block__item">
+								<div class="block__title">Заголовок 3:</div>
+								<div class="block__text">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+									Natus laudantium, impedit culpa, corrupti excepturi exercitationem inventore 
+									atque dolor repellat fugiat enim aliquam. Numquam officia tenetur omnis 
+									possimus inventore distinctio minima.
+								</div>
+							</div>
+
+							<div class="block__item">
+								<div class="block__title">Заголовок 3:</div>
+								<div class="block__text">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+									Natus laudantium, impedit culpa, corrupti excepturi exercitationem inventore 
+									atque dolor repellat fugiat enim aliquam. Numquam officia tenetur omnis 
+									possimus inventore distinctio minima.
+
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+									Natus laudantium, impedit culpa, corrupti excepturi exercitationem inventore 
+									atque dolor repellat fugiat enim aliquam. Numquam officia tenetur omnis 
+									possimus inventore distinctio minima.
+
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+									Natus laudantium, impedit culpa, corrupti excepturi exercitationem inventore 
+									atque dolor repellat fugiat enim aliquam. Numquam officia tenetur omnis 
+									possimus inventore distinctio minima.
+								</div>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- F.a.g section -->
+
+		<!-- portfolio section -->
+
+		<div data-vide-bg="video/video" class="portfolio__section">
+			<div class="portfolio__masck">
+				<div class="porfolio__header">
+					<h2>Портфолио:</h2>
+				</div>
+				<div class="albom__carusel">
+
+					<div class="portfolio">
+						<div class="albom">
+							<img src="images/1/1.jpg" alt="#">
+						</div>
+					</div>
+					
+					<div class="portfolio">
+						<div class="albom">
+							<img src="images/1/2.jpg" alt="#">
+						</div>
+					</div>
+
+					<div class="portfolio">
+						<div class="albom">
+							<img src="images/1/3.jpg" alt="#">
+						</div>
+					</div>
+
+					<div class="portfolio">
+						<div class="albom">
+							<img src="images/1/4.jpg" alt="#">
+						</div>
+					</div>
+
+					<div class="portfolio">
+						<div class="albom">
+							<img src="images/1/5.jpg" alt="#">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- portfolio section -->
+
+		<!-- reviews section -->
+
+		<div class="reviews__section">
+			<div class="container">
+				<div class="reviews__body">
+
+					<div class="carusel">
+
+					<div class="review">
+						<div class="review__face">
+							<img src="images/man.jpg" alt="#">
+						</div>
+						<div class="review__text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam nisi beatae doloribus, vero perspiciatis laboriosam consequatur quia iusto culpa tenetur reprehenderit quos nihil fuga laborum eligendi velit assumenda repellendus.
+							Libero sapiente natus recusandae aliquam nostrum laborum suscipit quasi nihil nulla ducimus accusantium iusto pariatur voluptatum voluptatem, molestias repudiandae dolor ab ut magni obcaecati, eos voluptate rerum nesciunt? Laborum, aut!
+							Nostrum dicta tempore exercitationem, ullam adipisci veniam delectus impedit assumenda excepturi vero earum quo molestiae voluptatum voluptas hic? Quas dolorum dignissimos fugiat accusamus in consectetur dicta quos repudiandae inventore a.</p>
+						</div>
+					</div>
+
+					<div class="review">
+						<div class="review__face">
+							<img src="images/man.jpg" alt="#">
+						</div>
+						<div class="review__text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam nisi beatae doloribus, vero perspiciatis laboriosam consequatur quia iusto culpa tenetur reprehenderit quos nihil fuga laborum eligendi velit assumenda repellendus.
+							Libero sapiente natus recusandae aliquam nostrum laborum suscipit quasi nihil nulla ducimus accusantium iusto pariatur voluptatum voluptatem, molestias repudiandae dolor ab ut magni obcaecati, eos voluptate rerum nesciunt? Laborum, aut!
+							Nostrum dicta tempore exercitationem, ullam adipisci veniam delectus impedit assumenda excepturi vero earum quo molestiae voluptatum voluptas hic? Quas dolorum dignissimos fugiat accusamus in consectetur dicta quos repudiandae inventore a.</p>
+						</div>
+					</div>
+
+					<div class="review">
+						<div class="review__face">
+							<img src="images/man.jpg" alt="#">
+						</div>
+						<div class="review__text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam nisi beatae doloribus, vero perspiciatis laboriosam consequatur quia iusto culpa tenetur reprehenderit quos nihil fuga laborum eligendi velit assumenda repellendus.
+							Libero sapiente natus recusandae aliquam nostrum laborum suscipit quasi nihil nulla ducimus accusantium iusto pariatur voluptatum voluptatem, molestias repudiandae dolor ab ut magni obcaecati, eos voluptate rerum nesciunt? Laborum, aut!
+							Nostrum dicta tempore exercitationem, ullam adipisci veniam delectus impedit assumenda excepturi vero earum quo molestiae voluptatum voluptas hic? Quas dolorum dignissimos fugiat accusamus in consectetur dicta quos repudiandae inventore a.</p>
+						</div>
+					</div>
+
+					<div class="review">
+						<div class="review__face">
+							<img src="images/man.jpg" alt="#">
+						</div>
+						<div class="review__text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam nisi beatae doloribus, vero perspiciatis laboriosam consequatur quia iusto culpa tenetur reprehenderit quos nihil fuga laborum eligendi velit assumenda repellendus.
+							Libero sapiente natus recusandae aliquam nostrum laborum suscipit quasi nihil nulla ducimus accusantium iusto pariatur voluptatum voluptatem, molestias repudiandae dolor ab ut magni obcaecati, eos voluptate rerum nesciunt? Laborum, aut!
+							Nostrum dicta tempore exercitationem, ullam adipisci veniam delectus impedit assumenda excepturi vero earum quo molestiae voluptatum voluptas hic? Quas dolorum dignissimos fugiat accusamus in consectetur dicta quos repudiandae inventore a.</p>
+						</div>
+					</div>
+
+					<div class="review">
+						<div class="review__face">
+							<img src="images/man.jpg" alt="#">
+						</div>
+						<div class="review__text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam nisi beatae doloribus, vero perspiciatis laboriosam consequatur quia iusto culpa tenetur reprehenderit quos nihil fuga laborum eligendi velit assumenda repellendus.
+							Libero sapiente natus recusandae aliquam nostrum laborum suscipit quasi nihil nulla ducimus accusantium iusto pariatur voluptatum voluptatem, molestias repudiandae dolor ab ut magni obcaecati, eos voluptate rerum nesciunt? Laborum, aut!
+							Nostrum dicta tempore exercitationem, ullam adipisci veniam delectus impedit assumenda excepturi vero earum quo molestiae voluptatum voluptas hic? Quas dolorum dignissimos fugiat accusamus in consectetur dicta quos repudiandae inventore a.</p>
+						</div>
+					</div>
+
+					<div class="review">
+						<div class="review__face">
+							<img src="images/man.jpg" alt="#">
+						</div>
+						<div class="review__text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam nisi beatae doloribus, vero perspiciatis laboriosam consequatur quia iusto culpa tenetur reprehenderit quos nihil fuga laborum eligendi velit assumenda repellendus.
+							Libero sapiente natus recusandae aliquam nostrum laborum suscipit quasi nihil nulla ducimus accusantium iusto pariatur voluptatum voluptatem, molestias repudiandae dolor ab ut magni obcaecati, eos voluptate rerum nesciunt? Laborum, aut!
+							Nostrum dicta tempore exercitationem, ullam adipisci veniam delectus impedit assumenda excepturi vero earum quo molestiae voluptatum voluptas hic? Quas dolorum dignissimos fugiat accusamus in consectetur dicta quos repudiandae inventore a.</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			</div>
+		</div>
+
+		<!-- reviews section -->
+
+
+		<!-- contact section -->
+
+
+		<div class="contact__section">
+			<div class="contact__body">
+
+					<form id="form" enctype="multipart/form-data" method="post">
+					
+					<div class="form-row">
+						<input type="text" id="email" required="required" placeholder="Name">
+					</div>
+		
+					<div class="form-row">
+						<input type="password" id="password" required="required" placeholder="Email">
+					</div>
+		
+					<div class="form-row">
+						<input type="text" id="number" required="required" placeholder="Tell">
+					</div>
+					
+					<div class="button__content">
+						<button>Записатся</button>
+					</div>
+		
+					</form>
+			</div>
+		</div>
+
+
+		<!-- contact section -->
+
+		<!-- footer section -->
+
+		<footer>
+			<div class="container">
+				<div class="footer__block">
+					<div class="footer__logo">
+						<img src="images/Logo.png" alt="#">
+					</div>
+					<div class="footer__header">
+						© Musik, 2010-2020. Все права защищены.
+					</div>
+					<div class="footer__icons__block">
+						<i class="fab fa-soundcloud"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-youtube"></i>
+					</div>
+					<div class="footer__menu">
+						<nav>
+							<ul class="topmenu">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#" class="down">О нас</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Партнеры</a></li>
+								<li><a href="#">Работы</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- footer section -->
+
+	
+		
+
+</div>
+
+
+	
+	
+
+
+
+	<script src="js/app.min.js"></script>
+	<script src="js/jquery.vide.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+	<script src="js/musik.js"></script>
+	<script src="libs/overlayScrollbars.js/jquery.overlayScrollbars.min.js"></script>
+	<script src="js/time.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	
+	
+
+</body>
+</html>
+
